@@ -1,0 +1,116 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 10 Jan 2022, 20:41:47
+    Author     : datph
+*/
+.vBoxLogo{
+    -fx-background-color: lightblue;
+    -fx-spacing: 10;
+    -fx-alignment: TOP-CENTER;
+}
+.textOUBUS{
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-stroke: blue;
+    -fx-stroke-width: 1;
+}
+.vBoxInfoPass{
+    -fx-spacing: 10;
+    -fx-pref-height: 230;
+    -fx-pref-width: 525;
+}
+.hBoxLastName, .hBoxSex, .hBoxAddress{
+    -fx-pref-height: 40;
+    -fx-alignment: CENTER_LEFT;
+}
+.lableLastName, .lableFirstName, .labelSex, .labelPhone, .labelAddress{
+    -fx-pref-width: 75;
+    -fx-font-weight: bold;
+}
+.labelSeat{
+    -fx-pref-width: 40;
+    -fx-font-weight: bold;
+}
+.hBoxButton{
+    -fx-pref-height: 40;
+    -fx-alignment: CENTER;
+    -fx-spacing: 10;
+}
+.buttonAction{
+    -fx-pref-width: 100;
+    -fx-pref-height: 40;
+    -fx-font-weight: bold;
+}
+.textFieldInfo{
+    -fx-pref-width: 170;
+}
+.textFieldAddress{
+    -fx-pref-width: 255;
+}
+.textFieldSeat{
+    -fx-pref-width: 120;
+}
+.comboBoxSex{
+    -fx-pref-width: 170;
+}
+.textPassInfo{
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+.vBoxInfoTicket{
+    -fx-spacing: 10;
+    -fx-pref-height: 230;
+    -fx-pref-width: 525;
+}
+.hBoxTripName, .hBoxDeparture, .hBoxDate, .hBoxPrice{
+    -fx-pref-height: 40;
+    -fx-alignment: CENTER_LEFT;
+}
+.lableTripName, .lableLicensePlatesName, .labelDeparture, .labelDestination, .labelDate, .labelTime, .labelPrice, .labelTicketId{
+    -fx-pref-width: 75;
+    -fx-font-weight: bold;
+}
+.textFieldInfoTickets{
+    -fx-pref-width: 170;
+}
+.datePickerDate{
+    -fx-pref-width: 170;
+}
+.textTicketsInfo{
+    -fx-font-size: 18;
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+.columnTicketsID{
+    -fx-pref-width: 50;
+}
+.columnTripName{
+    -fx-pref-width: 200;
+}
+.columnAll{
+    -fx-pref-width: 120;
+}
+.hBoxSearch{
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 10;
+    -fx-pref-height: 40;
+}
+.labelSearch{
+    -fx-pref-width: 35;
+    -fx-font-weight: bold;
+}
+.inputSearch{
+    -fx-pref-width: 170;
+}
+.buttonSearch{
+    -fx-font-weight: bold;
+}

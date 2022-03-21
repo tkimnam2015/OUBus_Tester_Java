@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" stylesheets="@../styles/FXMLTripManagerStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dtvn.oubus.FXMLTripManagerController">
+    <left>
+        <VBox prefHeight="400.0" prefWidth="100.0" styleClass="vBoxLogo" BorderPane.alignment="CENTER">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" styleClass="imageViewLogo">
+                    <image>
+                        <Image url="@../../../img/bus.png" />
+                    </image>
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </ImageView>
+                <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="OUBus" text="OU BUS" />
+            </children>
+        </VBox>
+    </left>
+    <center>
+        <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+            <children>
+                <HBox prefHeight="41.0" prefWidth="440.0" styleClass="hBoxSubject">
+                    <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textSubject" text="TRIPS MANAGERMENT" />
+                    </children>
+                </HBox>
+                <TableView fx:id="tableTrip" prefHeight="463.0" prefWidth="750.0" styleClass="tableViewTrip">
+                    <columns>
+                        <TableColumn fx:id="columnID" prefWidth="75.0" styleClass="columnID" text="ID" />
+                        <TableColumn fx:id="columnNameTrip" prefWidth="75.0" styleClass="columnNameTrip" text="Name trip" />
+                        <TableColumn fx:id="columnDeparture" prefWidth="75.0" styleClass="columnDeparture" text="Departure" />
+                        <TableColumn fx:id="columnDestination" prefWidth="75.0" styleClass="columnDestination" text="Destination" />
+                  <TableColumn fx:id="columnDate" prefWidth="75.0" styleClass="columnDate" text="Date" />
+                  <TableColumn fx:id="columnTime" prefWidth="75.0" styleClass="columnTime" text="Time" />
+                        <TableColumn fx:id="columnPrice" prefWidth="98.0" styleClass="columnPrice" text="Price" />
+                    </columns>
+                </TableView>
+            </children>
+        </VBox>
+    </center>
+    <right>
+        <VBox prefHeight="460.0" prefWidth="100.0" styleClass="vBoxAction" BorderPane.alignment="TOP_LEFT">
+            <children>
+                <Button mnemonicParsing="false" onAction="#addTrip" styleClass="buttonAdd" text="Add">
+                    <graphic>
+                        <ImageView fitHeight="116.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/AddButton.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <VBox.margin>
+                        <Insets top="40.0" />
+                    </VBox.margin>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#searchHandler" styleClass="buttonSearch" text="Search">
+                    <graphic>
+                        <ImageView fitHeight="211.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/SearchButton.jpg" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#editHandler" styleClass="buttonEdit" text="Edit">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/EditButton.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="13.0" layoutY="170.0" mnemonicParsing="false" onAction="#deleteHandler" styleClass="buttonEdit" text="Delete">
+                    <graphic>
+                        <ImageView fitHeight="35.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../img/DeleteButton.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button layoutX="10.0" layoutY="97.0" mnemonicParsing="false" onAction="#logOutHandler" styleClass="buttonLogOut" text="Log out" />
+            </children>
+            <BorderPane.margin>
+                <Insets />
+            </BorderPane.margin>
+        </VBox>
+    </right>
+</BorderPane>

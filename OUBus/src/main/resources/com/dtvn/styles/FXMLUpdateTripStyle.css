@@ -1,0 +1,182 @@
+.borderPaneMain{
+
+}
+
+.hBoxSubject{
+    -fx-alignment: CENTER;
+    -fx-pref-height: 40;
+}
+
+.textSubject{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+
+.tableViewTrip{
+
+}
+
+.columnID{
+    -fx-pref-width: 30;
+}
+
+.columnNameTrip{
+    -fx-pref-width: 150;
+}
+
+.columnDeparture{
+    -fx-pref-width: 100;
+}
+
+.columnDestination{
+    -fx-pref-width: 100;
+}
+
+.columnDate{
+    -fx-pref-width: 100;
+}
+
+.columnTime{
+    -fx-pref-width: 100;
+}
+
+.columnPrice{
+    -fx-pref-width: 100;
+}
+
+.vBoxEdit{
+    -fx-spacing: 10;
+    -fx-background-color: lightblue;
+    -fx-alignment: TOP-CENTER;
+    -fx-pref-width: 250;
+}
+
+.hBoxEdit{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+}
+
+.textEdit{
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+    -fx-font-size: 18;
+}
+
+.hBoxTripName{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lableTripName{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.textFieldTripName{
+    -fx-pref-width: 155;
+}
+
+.hBoxDeparture{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lableDeparture{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.textFieldDeparture{
+    -fx-pref-width: 155;
+}
+
+.hBoxDestination{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lableDestination{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.textFieldDestination{
+    -fx-pref-width: 155;
+}
+
+.hBoxDate{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lableDate{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.datePickerDate{
+    -fx-pref-width: 155;
+}
+
+.hBoxTime{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lableTime{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.textFieldTime{
+    -fx-pref-width: 155;
+}
+
+.hBoxPrice{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+
+.lablePrice{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+
+.textFieldPrice{
+    -fx-pref-width: 155;
+}
+
+.hBoxButton{
+    -fx-alignment: TOP-CENTER;
+    -fx-spacing: 10;
+    -fx-pref-height: 40;
+}
+
+.buttonSave{
+    -fx-pref-width: 70;
+    -fx-pref-height: 30;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+
+.buttonBack{
+    -fx-pref-width: 70;
+    -fx-pref-height: 30;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+.buttonReset{
+    -fx-pref-width: 70;
+    -fx-pref-height: 30;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}

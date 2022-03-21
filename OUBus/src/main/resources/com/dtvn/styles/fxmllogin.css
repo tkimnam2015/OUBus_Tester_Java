@@ -1,0 +1,34 @@
+VBox {
+    -fx-background-color: lightblue;
+    -fx-padding: 10;
+    -fx-spacing: 10;
+}
+
+Label.lbWrite {
+    -fx-alignment: LEFT;
+}
+HBox {
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+}
+
+TextField, ComboBox {
+    -fx-pref-height: 35;
+}
+
+Label.Subject {
+    -fx-font-size: 36;
+    -fx-fill: red;
+    -fx-stroke-width: 3;
+    -fx-stroke: gold;
+    -fx-alignment: CENTER;
+}
+
+Button.btnManager, .btnStaff{
+    -fx-font-weight: bold;
+}
+
+Button.btnLogin, .btnCancel {
+    -fx-background-color: darkblue;
+    -fx-text-fill: white;
+}

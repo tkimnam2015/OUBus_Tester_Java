@@ -1,0 +1,103 @@
+.vBoxLogo{
+    -fx-spacing: 20;
+    -fx-background-color: lightblue;
+    -fx-alignment: TOP-CENTER; 
+}
+.OUBus{
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-stroke: blue;
+    -fx-stroke-width: 1;
+}
+.hBoxSubject{
+    -fx-alignment: CENTER;
+    -fx-pref-height: 40;
+}
+.textSubject{
+    -fx-font-size: 20;
+    -fx-font-weight: bold;
+    -fx-fill: blue;
+    -fx-stroke: white;
+    -fx-stroke-width: 1;
+}
+.tableViewTrip{
+    -fx-pref-height: 460;
+}
+.buttonAdd, .buttonSearch, .buttonEdit{
+    -fx-pref-width: 95;
+    -fx-pref-height: 50;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER-LEFT;
+}
+.vBoxAction{
+    -fx-alignment: TOP-CENTER;
+    -fx-spacing: 10;
+}
+
+.buttonLogOut{
+    -fx-pref-width: 95;
+    -fx-pref-height: 50;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-underline: true;
+    -fx-text-fill: blue;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+.columnID{
+    -fx-pref-width: 30;
+}
+.columnNameTrip{
+    -fx-pref-width: 150;
+}
+.columnDeparture, .columnDestination, .columnDate, .columnTime, .columnPrice{
+    -fx-pref-width: 100;
+}
+/*For FXMLSearchTrip.fxml*/
+.hBoxSearch{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+.labelSearch{
+    -fx-font-weight: bold;
+}
+.tableSearchTrip{
+    -fx-pref-height: 420;
+}
+.buttonDelete, .buttonReset, .buttonBack, .buttonDelete, .buttonAddConfirm/*FXMLUpdateTrip*/{
+    -fx-pref-width: 70;
+    -fx-pref-height: 30;
+    -fx-cursor: hand;
+    -fx-alignment: CENTER;
+}
+/*For FXMLAddTrip.fxml*/
+.hBoxInfo1, .hBoxInfo2, .hBoxInfo3{
+    -fx-alignment: CENTER-LEFT;
+    -fx-pref-height: 40;
+    -fx-spacing: 10;
+}
+.labelDeparture, .labelDestination{
+    -fx-pref-width: 70;
+    -fx-font-weight: bold;
+}
+.labelTime, .labeDate, .labelPrice{
+    -fx-pref-width: 35;
+    -fx-font-weight: bold;
+}
+.textFieldDeparture, .textFieldDestination{
+    -fx-pref-width: 280;
+}
+.tableAddTrip{
+    -fx-pref-height: 380;
+}
+.textFieldTime, .textFieldPrice{
+    -fx-pref-width: 190;
+}
+.datePickerDate{
+    -fx-pref-width: 195;
+}

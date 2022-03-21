@@ -1,0 +1,25 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 Jan 2022, 20:50:10
+    Author     : datph
+*/
+.vBoxNote{
+    -fx-pref-height: 40;
+    -fx-alignment: CENTER;
+}
+.hBoxCompany, .hBoxSubject, .hBoxNameTrip, .hBoxBus{
+    -fx-pref-height: 35;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER;
+}
+.hBoxFrom, .hBoxTo, .hBoxDeparture, .hBoxSeat, .hBoxFullName, .hBoxPhone, .hBoxEmployee, .hBoxPrintDate{
+    -fx-pref-height: 35;
+    -fx-spacing: 10;
+    -fx-alignment: CENTER-LEFT;
+}
+.textTripName{
+    -fx-text-alignment: CENTER;
+}

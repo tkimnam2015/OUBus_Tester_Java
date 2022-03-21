@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="1000.0" styleClass="borderPaneMain" stylesheets="@../styles/FXMLUpdateTripStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dtvn.oubus.FXMLUpdateTripController">
+   <right>
+      <VBox prefHeight="400.0" prefWidth="237.0" styleClass="vBoxEdit" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxEdit">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textEdit" text="EDIT TRIP">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="60.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxTripName">
+               <children>
+                  <Label styleClass="lableTripName" text="Trip name:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldTripName" editable="false" styleClass="textFieldTripName" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxDeparture">
+               <children>
+                  <Label styleClass="lableDeparture" text="Departure:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="textFieldDeparture" styleClass="textFieldDeparture" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxDestination">
+               <children>
+                  <Label styleClass="lableDestination" text="Destination:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="textFieldDestination" styleClass="textFieldDestination" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxDate">
+               <children>
+                  <Label styleClass="lableDate" text="Date:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="datePickerDate" editable="false" styleClass="datePickerDate" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="160.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxTime">
+               <children>
+                  <Label styleClass="lableTime" text="Time:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="textFieldTime" styleClass="textFieldTime" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxPrice">
+               <children>
+                  <Label styleClass="lablePrice" text="Price:">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></Label>
+                  <TextField fx:id="textFieldPrice" styleClass="textFieldPrice" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxButton">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#saveHandler" styleClass="buttonSave" text="Save" />
+                  <Button layoutX="60.0" layoutY="10.0" mnemonicParsing="false" onAction="#resetHandler" styleClass="buttonReset" text="Reset" />
+                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#backHandler" styleClass="buttonBack" text="Back" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <TableView fx:id="tableTrip" prefHeight="200.0" prefWidth="200.0" styleClass="tableViewTrip" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="75.0" styleClass="columnID" text="ID" />
+          <TableColumn fx:id="columnTripName" prefWidth="75.0" styleClass="columnNameTrip" text="Name trip" />
+            <TableColumn fx:id="columnDeparture" prefWidth="75.0" styleClass="columnDeparture" text="Departure" />
+            <TableColumn fx:id="columnDestination" prefWidth="75.0" styleClass="columnDestination" text="Destination" />
+            <TableColumn fx:id="columnDate" prefWidth="75.0" styleClass="columnDate" text="Date" />
+            <TableColumn fx:id="columnTime" prefWidth="75.0" styleClass="columnTime" text="Time" />
+            <TableColumn fx:id="columnPrice" prefWidth="75.0" styleClass="columnPrice" text="Price" />
+        </columns>
+      </TableView>
+   </center>
+   <top>
+      <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxSubject" BorderPane.alignment="CENTER">
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textSubject" text="TRIPS MANAGERMENT" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

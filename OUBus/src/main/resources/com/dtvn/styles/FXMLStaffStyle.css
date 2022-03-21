@@ -1,0 +1,47 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 9 Jan 2022, 20:51:44
+    Author     : datph
+*/
+.vBoxLogo{
+    -fx-background-color: lightblue;
+    -fx-spacing: 5;
+    -fx-alignment: TOP-CENTER;
+}
+.textOUBUS{
+    -fx-font-size: 35;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+    -fx-stroke: blue;
+    -fx-stroke-width: 1;
+}
+.hBoxFillter{
+    -fx-pref-height: 40;
+    -fx-alignment: CENTER_LEFT;
+    -fx-spacing: 10;
+}
+.labelView{
+    -fx-pref-width: 100;
+    -fx-font-weight: bold;
+}
+.comboBox{
+    -fx-pref-width: 250;
+}
+.buttonTicket{
+    -fx-pref-width: 150;
+    -fx-pref-height: 40;
+    -fx-font-weight: bold;
+    -fx-text-fill: black;
+}
+.columnID{
+    -fx-pref-width: 40;
+}
+.columnTicketName, .columnTripName{
+    -fx-pref-width: 150;
+}
+.columnOrther{
+    -fx-pref-width: 100;
+}

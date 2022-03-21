@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="544.0" stylesheets="@../styles/FXMLPrintTicketStyle.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.dtvn.oubus.FXMLPrintTicketController">
+   <children>
+      <VBox prefHeight="220.0" prefWidth="544.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxCompany">
+               <children>
+                  <Label text="CÔNG TY XE KHÁCH OUBUS" textFill="#201fc2">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="79.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxSubject">
+               <children>
+                  <Label text="THẺ LÊN XE/ BOARDING PASS" textFill="#ff4141">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="145.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxNameTrip">
+               <children>
+                  <Text fx:id="textTripName" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="textTripName" text="Text" wrappingWidth="400.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="167.0" prefHeight="100.0" prefWidth="200.0" styleClass="hBoxBus">
+               <children>
+                  <Label text="XE/ BUS:">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="textBus" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-alignment: CENTER;" text="Text" wrappingWidth="100.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxFrom">
+               <children>
+                  <Label text="NƠI ĐI/ FROM:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textFrom" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="230.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Label text="MÃ VÉ/ CODE:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="textIdTicket" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="100.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxTo">
+               <children>
+                  <Label text="NƠI ĐẾN/ TO:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textTo" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="440.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxDeparture">
+               <children>
+                  <Label text="KHỞI HÀNH/ DEPARTURE:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textDateTime" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="365.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxSeat">
+               <children>
+                  <Label text="GHẾ/ SEAT:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textSeat" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="200.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+                  <Label text="GIÁ VÉ/ PRICE:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <Text fx:id="textPrice" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="150.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxFullName">
+               <children>
+                  <Label text="HỌ TÊN/ NAME:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textLastFirstName" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="425.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxPhone">
+               <children>
+                  <Label text="ĐIỆN THOẠI/ TEL:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textPhone" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="420.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <VBox prefHeight="44.0" prefWidth="362.0" styleClass="vBoxNote">
+               <children>
+                  <Label style="-fx-text-fill: red;" text="Hành khách có mặt tại văn phòng trước giờ khởi hành 30 phút!" />
+                  <Label style="-fx-text-fill: red;" text="To be present at this office before departure time about 30 minutes!" />
+               </children>
+            </VBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxEmployee">
+               <children>
+                  <Label text="NHÂN VIÊN/ EMPLOYEE:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="380.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" styleClass="hBoxPrintDate">
+               <children>
+                  <Label text="NGÀY IN/ PRINTED DATE:" textFill="#12c724">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Text fx:id="textPrintDate" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="370.0">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Text>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
